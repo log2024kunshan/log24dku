@@ -1,0 +1,440 @@
+<!doctype html>
+<!-- FlatFy Theme - Andrea Galanti /-->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html>
+
+<head>
+  <style>
+  table {
+    border-collapse: collapse;
+    line-height: 3;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tr:nth-child(even) {background-color: #f2f2f2;}
+  </style>
+
+<!-- <script>
+// Timezone converter function 
+function convertTime(date, offset) {
+  var utcDate = new Date(date.toLocaleString('en-US', {timeZone: 'Asia/Tokyo'}));
+  var newDate = new Date(utcDate.getTime() + (offset*60*60*1000));
+  return newDate.toLocaleTimeString(); 
+}
+
+// Get user's timezone offset
+var offset = new Date().getTimezoneOffset()/60; 
+
+// Convert times on page load
+window.onload = function() {
+  var times = document.querySelectorAll("td:nth-child(2)");
+  for(var i=0; i<times.length; i++) {
+    var tokyoTime = times[i].textContent; 
+    var localTime = convertTime(new Date("08/21/2023 " + tokyoTime), offset);
+    times[i].textContent = localTime;
+  }
+}
+
+</script> -->
+
+</head>
+  
+<!--<![endif]-->
+<script>
+function showhide(id) {
+  var x = document.getElementById(id);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="description" content="Workshop at the 36th Conference on Neural Information Processing Systems">
+<meta name="author" content="123">
+<title>LoG 2024 Duke Kunshan University</title>
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom Google Web Font -->
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet" type="text/css">
+
+<!-- Custom CSS-->
+<link href="css/general.css" rel="stylesheet">
+
+<!-- Owl-Carousel -->
+<link href="css/custom.css" rel="stylesheet">
+<link href="css/owl.carousel.css" rel="stylesheet">
+<link href="css/owl.theme.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
+
+<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="css/magnific-popup.css">
+<script src="js/modernizr-2.8.3.min.js"></script> <!-- Modernizr /-->
+<!--[if IE 9]>
+		<script src="js/PIE_IE9.js"></script>
+	<![endif]-->
+<!--[if lt IE 9]>
+		<script src="js/PIE_IE678.js"></script>
+	<![endif]-->
+
+<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+	<![endif]-->
+
+</head>
+
+<body id="home">
+
+<!-- Preloader -->
+<div id="preloader">
+  <div id="status"></div>
+</div>
+
+
+<!-- NavBar-->
+<nav class="navbar-default" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="https://logconference.org/">LoG 2024</a> </div>
+      <!-- <a class="navbar-brand" href="#home">MGDL</a> </div> -->
+    <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+        <li class="menuItem"><a href="#about">About</a></li>
+        <!-- <li class="menuItem"><a href="#callforpapers">Call for Papers</a></li> -->
+        <li class="menuItem"><a href="#faq">FAQ</a></li>
+        <li class="menuItem"><a href="#invitedspeakers">Invited Speakers</a></li>
+        <!-- <li class="menuItem"><a href="#preregistration">Pre-Registration</a></li> -->
+        <li class="menuItem"><a href="#schedule">Schedule</a></li>
+        <!-- <li class="menuItem"><a href="#accepted">Accepted Papers</a></li> -->
+        <li class="menuItem"><a href="#organizers">Organizers</a></li>
+        <!--<li class="menuItem"><a href="#related">Related Workshops</a></li> -->
+        <li class="menuItem"><a href="#sponsors">Sponsors</a></li>
+        <!-- <li class="menuItem"><a href="#contact">Contact</a></li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="intro-header">
+  <!-- <div class="col-xs-12 text-center abcen1">
+    <h2 class="h2_home wow fadeIn" data-wow-delay="0.4s">Learning on Graphs 2024</h2>
+    <h2 class="h2_home wow fadeIn" data-wow-delay="0.6s">Meetup</h2>
+    <h3 class="h3_home wow fadeIn" data-wow-delay="0.6s">November 29 - December 1, 2024</h3> -->
+  <!--   <ul class="list-inline intro-social-buttons">
+      <a href="https://neurips.cc/virtual/2022/workshop/50005" class="btn  btn-lg mybutton_cyano wow fadeIn" data-wow-delay="0.8s"><span class="network-name">Livestream</span></a> </li>
+    </ul> -->
+  </div>
+  <!-- /.container -->
+
+</div>
+
+
+<!-- About -->
+<div id="about" class="content-section-a" style="border-top: 0">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 wow fadeInLeftBig" data-animation-delay="200">
+        <!-- <h2 class="section-heading">About</h2> -->
+        <p class="lead"> 
+        <h2 class="LoG Conference">LoG</h2>
+        <p class="lead">The Learning on Graphs conference (LoG) is an annual research conference that covers areas broadly related to machine learning on graphs and geometry, with a special focus on review quality. In its inaugural edition, LoG 2022 received 250+ paper submissions, 2,800+ total registrations, and distributed $30,000+ in reviewer awards.
+        <br/><br/>
+
+        </p>
+      </br> 
+      <!-- <img class="magnify center" src="img/poster.png" alt="poster" width="1000px">        -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id ="faq" class="content-section-b">
+  <div class="container">
+    <h2 class="section-heading">Scientific Steering Committee</h2>
+    <div class="row wow fadeInRightBig" data-animation-delay="200">
+
+      <div class="col-sm-3 wow fadeInRightBig" data-animation-delay="200">
+  <h4 class="section-heading">
+    <center>Bin Dong</center>
+  </h4>
+  <center>
+    <a href="http://faculty.bicmr.pku.edu.cn/~dongbin/">
+      <img class="magnify img-responsive img-circle" height="150px" width="150px" src="img/ssc/Dong_Bin.jpg" alt="Bin Dong">
+    </a>
+  </center>
+  <h5 class="section-heading">
+    <center><i>Peking University</i></center>
+  </h5>
+</div>
+
+
+<div class="col-sm-3 wow fadeInRightBig" data-animation-delay="200">
+  <h4 class="section-heading">
+    <center>Huaxiong Huang</center>
+  </h4>
+  <center>
+    <a href="https://staff.uic.edu.cn/hhuang/en">
+      <img class="magnify img-responsive img-circle" height="150px" width="150px" src="img/ssc/Huang_Huaxiong.jpg" alt="Hua Xiong Huang">
+    </a>
+  </center>
+  <h5 class="section-heading">
+    <center><i>Duke Kunshan University</i></center>
+  </h5>
+</div>
+
+<div class="col-sm-3 wow fadeInRightBig" data-animation-delay="200">
+  <h4 class="section-heading">
+    <center>Shi Jin</center>
+  </h4>
+  <center>
+    <a href="https://ins.sjtu.edu.cn/people/shijin/#publications">
+      <img class="magnify img-responsive img-circle" height="150px" width="150px" src="img/ssc/Jin_Shi.jpg" alt="Shi Jin">
+    </a>
+  </center>
+  <h5 class="section-heading">
+    <center><i>Shanghai Jiao Tong University</i></center>
+  </h5>
+</div>
+
+<div class="col-sm-3 wow fadeInRightBig" data-animation-delay="200">
+  <h4 class="section-heading">
+    <center>Guowei Wei</center>
+  </h4>
+  <center>
+    <a href="https://users.math.msu.edu/users/weig/">
+      <img class="magnify img-responsive img-circle" height="150px" width="150px" src="img/ssc/Wei_Guowei.jpg" alt="Guowei Wei">
+    </a>
+  </center>
+  <h5 class="section-heading">
+    <center><i>Michigan State University</i></center>
+  </h5>
+</div>
+
+<div class="col-sm-3 wow fadeInRightBig" data-animation-delay="200">
+  <h4 class="section-heading">
+    <center>Jian Pei</center>
+  </h4>
+  <center>
+    <a href="https://sites.google.com/view/jpei/jian-peis-homepage">
+      <img class="magnify img-responsive img-circle" height="150px" width="150px" src="img/ssc/Pei_Jian.jpg" alt="Jian Pei">
+    </a>
+  </center>
+  <h5 class="section-heading">
+    <center><i>Duke University</i></center>
+  </h5>
+</div>
+
+<div class="col-sm-3 wow fadeInRightBig" data-animation-delay="200">
+  <h4 class="section-heading">
+    <center>Jianguo Liu</center>
+  </h4>
+  <center>
+    <a href="https://math.duke.edu/people/jian-guo-liu">
+      <img class="magnify img-responsive img-circle" height="150px" width="150px" src="img/ssc/Liu_Jianguo.jpg" alt="Jianguo Liu">
+    </a>
+  </center>
+  <h5 class="section-heading">
+    <center><i>Duke University</i></center>
+  </h5>
+</div>
+
+<div class="col-sm-3 wow fadeInRightBig" data-animation-delay="200">
+  <h4 class="section-heading">
+    <center>Jian Tang</center>
+  </h4>
+  <center>
+    <a href="https://jian-tang.com/">
+      <img class="magnify img-responsive img-circle" height="150px" width="150px" src="img/ssc/Tang_Jian.jpg" alt="Jian Tang">
+    </a>
+  </center>
+  <h5 class="section-heading">
+    <center><i>Mila-Quebec AI Institute and HEC Montreal</i></center>
+  </h5>
+</div>
+
+
+
+<div class="col-sm-3 wow fadeInRightBig" data-animation-delay="200">
+  <h4 class="section-heading">
+    <center>Xiaoqun Zhang</center>
+  </h4>
+  <center>
+    <a href="http://faculty.bicmr.pku.edu.cn/~dongbin/">
+      <img class="magnify img-responsive img-circle" height="150px" width="150px" src="img/ssc/Zhang_Xiaoqun.jpg" alt="Xiaoqun Zhang">
+    </a>
+  </center>
+  <h5 class="section-heading">
+    <center><i>Shanghai Jiao Tong University</i></center>
+  </h5>
+</div>
+</div>
+   
+
+<!-- Schedule -->
+<div id ="schedule" class="content-section-a">
+  <div class="container">
+    <h2 class="section-heading">Schedule</h2>
+      TBD
+  </div>
+</div>
+
+
+<!-- organizers -->
+<div id="organizers" class="content-section-b" style="border-top: 0">
+  <div class="container">
+    <h2 class="section-heading">Organizers</h2>
+    <div class="row wow fadeInRightBig" data-animation-delay="200">
+
+      <div class="col-sm-2 wow fadeInRightBig" data-animation-delay="200">
+        <h4 class="section-heading">
+          <center>Wenbing Huang</center>
+        </h4>
+        <center>
+          <a href="https://gsai.ruc.edu.cn/addons/teacher/index/info.html?user_id=31&ruccode=ADIIMVRnBzFXMFdnVTAIOw%3D%3D&ln=en">
+            <img class="magnify img-responsive img-circle" height="150px" width="150px" src="img/organizers/Huang_Wenbing.jpg" alt="Wenbing Huang">
+          </a>
+        </center>
+        <h5 class="section-heading">
+          <center><i>Renmin University of China</i></center>
+        </h5>
+      </div>
+
+      <div class="col-sm-2 wow fadeInRightBig" data-animation-delay="200">
+        <h4 class="section-heading">
+          <center>Yuguang Wang</center>
+        </h4>
+        <center>
+          <a href="https://yuguangwang.github.io/">
+            <img class="magnify img-responsive img-circle" height="150px" width="150px" src="img/organizers/Wang_Yuguang.jpg" alt="Yuguang Wang">
+          </a>
+        </center>
+        <h5 class="section-heading">
+          <center><i>Shanghai Jiao Tong University</i></center>
+        </h5>
+      </div>
+
+      <div class="col-sm-2 wow fadeInRightBig" data-animation-delay="200">
+        <h4 class="section-heading">
+          <center>Kelin Xia</center>
+        </h4>
+        <center>
+          <a href="https://personal.ntu.edu.sg/XIAKELIN/">
+            <img class="magnify img-responsive img-circle" height="150px" width="150px" src="img/organizers/Xia_Kelin.png" alt="Kelin Xia">
+          </a>
+        </center>
+        <h5 class="section-heading">
+          <center><i>Nanyang Technological University</i></center>
+        </h5>
+      </div>
+
+      <div class="col-sm-2 wow fadeInRightBig" data-animation-delay="200">
+        <h4 class="section-heading">
+          <center>Shixin Xu</center>
+        </h4>
+        <center>
+          <a href="https://sites.google.com/site/shixinxupage/">
+            <img class="magnify img-responsive img-circle" height="150px" width="150px" src="img/organizers/Xu_Shixin.jpg" alt="Shixin Xu">
+          </a>
+        </center>
+        <h5 class="section-heading">
+          <center><i>Duke Kunshan University</i></center>
+        </h5>
+      </div>
+
+      <div class="col-sm-2 wow fadeInRightBig" data-animation-delay="200">
+        <h4 class="section-heading">
+          <center>Dongmian Zou</center>
+        </h4>
+        <center>
+          <a href="https://scholars.duke.edu/person/Dongmian.Zou">
+            <img class="magnify img-responsive img-circle" height="150px" width="150px" src="img/organizers/Zou_Dongmian.jpg" alt="Dongmian Zou">
+          </a>
+        </center>
+        <h5 class="section-heading">
+          <center><i>Duke Kunshan University</i></center>
+        </h5>
+      </div>
+    </div> <!-- End of first row -->
+
+    <div class="row wow fadeInRightBig" data-animation-delay="200">
+
+
+
+    </div> <!-- End of second row -->
+
+  </div> <!-- End of container -->
+</div> <!-- End of organizers section -->
+
+
+<!-- 赞助 -->
+<div id="sponsors" class="content-section-a" style="border-top: 0">
+    <div class="container">
+      <h2 class="section-heading">Sponsors</h2><br/>
+      <div class="row align-items-center justify-content-center wow fadeInLeftBig"  data-animation-delay="200">
+        
+        <img  class="left" style="" height="110" src="./img/sponsor/DSRC.png" alt="sponsor"> 
+      </br></br>
+         <img  class="left" style="" height="110" src="./img/sponsor/Zu_chong_zhi.png" alt="sponsor"> 
+        </div>
+
+      </div>
+   </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12" id="contact">
+        <h3 class="footer-title">Contact</h3>
+        <p> Please contact <a href = "mailto: log2024kunshan@gmail.com">log2024kunshan@gmail.com</a> with any questions. </p>
+      </div>
+      <!-- /col-xs-7 -->
+    </div>
+  </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/script.js"></script>
+<!-- StikyMenu -->
+<script src="js/stickUp.min.js"></script>
+<script type="text/javascript">
+	  jQuery(function($) {
+		$(document).ready( function() {
+		  $('.navbar-default').stickUp();
+
+		});
+	  });
+
+	</script>
+<!-- Smoothscroll -->
+<script type="text/javascript" src="js/jquery.corner.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+	 new WOW().init();
+	</script>
+<script src="js/classie.js"></script>
+<!-- Magnific Popup core JS file -->
+<script src="js/jquery.magnific-popup.js"></script>
+</body>
+</html>
