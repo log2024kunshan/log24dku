@@ -353,286 +353,334 @@ function showhide(id) {
 </div>
    
 
-<!-- Schedule -->
-<div id="schedule" class="content-section-a">
-  <div class="container">
-    <h2 class="section-heading">Schedule</h2>
-    <div style="text-align: center; margin-bottom: 30px;">
-      <h3 class="section-heading">In-person Venue</h3>
-      Innovation Building 1047 (IB 1047)<br/><br/>
-      <h3 class="section-heading">Zoom for Online Talks</h3>
-      Zoom Meeting ID: 93364289344 <br/>
-      Passcode: dkumath
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Conference Schedule</title>
+  <style>
+    /* Define a unified light background color */
+    .content-row {
+      background-color: #f9f9f9;
+    }
+    /* Maintain the background color for Day headers */
+    .day-header {
+      background-color: #e6f7ff;
+      font-weight: bold;
+      text-align: center;
+    }
+    /* Table header styles */
+    table.schedule-table thead tr {
+      background-color: #f2f2f2;
+    }
+    /* Table borders and cell alignment */
+    table.schedule-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    table.schedule-table th, table.schedule-table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+    /* Bold header text */
+    table.schedule-table th h4 {
+      margin: 0;
+    }
+    /* Section headings */
+    .section-heading {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    /* Container styling */
+    .container {
+      width: 90%;
+      margin: auto;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="schedule" class="content-section-a">
+    <div class="container">
+      <h2 class="section-heading">Conference Schedule</h2>
+      <div style="text-align: center; margin-bottom: 30px;">
+        <h3 class="section-heading">In-person Venue</h3>
+        Innovation Building 1047 (IB 1047)<br/><br/>
+        <h3 class="section-heading">Zoom for Online Talks</h3>
+        Zoom Meeting ID: 93364289344 <br/>
+        Passcode: dkumath
+      </div>
+
+      <style>
+        /* 定义统一的浅色背景颜色 */
+        .content-row {
+          background-color: #f9f9f9;
+        }
+        /* 保持Day标题行的背景颜色 */
+        .day-header {
+          background-color: #e6f7ff;
+          font-weight: bold;
+        }
+        /* 表头样式 */
+        .dataframe thead tr {
+          background-color: #f2f2f2;
+        }
+        /* 表格边框和单元格对齐 */
+        table.dataframe {
+          width: 98%;
+          border-collapse: collapse;
+        }
+        table.dataframe th, table.dataframe td {
+          border: 1px solid #ddd;
+          padding: 8px;
+          text-align: center;
+        }
+        /* 表头文字加粗 */
+        table.dataframe th h4 {
+          margin: 0;
+        }
+      </style>
+
+      <div style="text-align: center; margin-bottom: 30px;">
+        <table class="datafra">
+          <thead>
+            <tr>
+              <th colspan="4"><h4>Time Table</h4></th>
+            </tr>
+            <tr>
+              <th style="width: 12%;">Time</th>
+              <th style="width: 14%;">Session</th>
+              <th style="width: 23%;">Speaker</th>
+              <th style="width: 51%;">Talk Title</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Day 1 -->
+            <tr class="day-header">
+              <th colspan="4">Day 1: 29 November 2024, Friday</th>
+            </tr>
+            <tr class="content-row">
+              <td>9:00-9:10</td>
+              <td>Opening Remarks</td>
+              <td>Smita Krishnaswamy</td>
+              <td></td>
+            </tr>
+            <tr class="content-row">
+              <td>9:10-9:15</td>
+              <td>Opening Remarks</td>
+              <td>Kaizhu Huang</td>
+              <td></td>
+            </tr>
+            <tr class="content-row">
+              <td>9:15-10:00</td>
+              <td>Keynote Talk</td>
+              <td><i>Zhewei Wei</i></td>
+              <td>Graph Machine Learning: Foundations and Perspectives</td>
+            </tr>
+            <tr class="content-row">
+              <td>10:00-10:30</td>
+              <td>Tea Break</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="content-row">
+              <td>10:30-11:00</td>
+              <td>Invited Talk</td>
+              <td><i>Xian Wei</i></td>
+              <td>Geometric Transformer Learning for Point Clouds</td>
+            </tr>
+            <tr class="content-row">
+              <td>11:00-11:30</td>
+              <td>Invited Talk</td>
+              <td><i>Eric Qu</i></td>
+              <td>The Importance of Being Scalable: Improving the Speed and Accuracy of Neural Network Interatomic Potentials</td>
+            </tr>
+            <tr class="content-row">
+              <td>11:30-12:00</td>
+              <td>Invited Talk</td>
+              <td><i>Kun Zhan</i></td>
+              <td>Bias Mitigation in Graph Generative Models</td>
+            </tr>
+            <tr class="content-row">
+              <td>12:00-14:00</td>
+              <td>Lunch</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="content-row">
+              <td>14:00-14:45</td>
+              <td>Keynote Talk</td>
+              <td><i>Angelica Aviles-Rivero</i></td>
+              <td>Hypergraphs Networks: Hybrid Models with Minimal Supervision for Multi-Modal Classification</td>
+            </tr>
+            <tr class="content-row">
+              <td>14:45-15:15</td>
+              <td>Invited Talk</td>
+              <td><i>Chieh-Hsin Lai</i></td>
+              <td>Evolution of Diffusion Models: From Birth to Enhanced Efficiency and Controllability</td>
+            </tr>
+            <tr class="content-row">
+              <td>15:15-15:45</td>
+              <td>Tea Break</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="content-row">
+              <td>15:45-16:15</td>
+              <td>Invited Talk</td>
+              <td><i>Cheng Cheng</i></td>
+              <td>Random Sampling and Distributed Reconstruction of Bandlimited Graph Signals from Local Measurements</td>
+            </tr>
+            <tr class="content-row">
+              <td>16:15-16:45</td>
+              <td>Invited Talk</td>
+              <td><i>Zhixun Li</i></td>
+              <td>Graph Intelligence with Large Language Models and Prompt Learning</td>
+            </tr>
+            <tr class="content-row">
+              <td>16:45-17:15</td>
+              <td>Invited Talk</td>
+              <td><i>Xiaoqing Liu</i></td>
+              <td>Data-Driven and AI-Enhanced Design of Material Interfaces: Discovery of Z-scheme Heterostructures</td>
+            </tr>
+            <tr class="content-row">
+              <td>17:15-20:00</td>
+              <td>Dinner</td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <!-- Day 2 -->
+            <tr class="day-header">
+              <th colspan="4">Day 2: 30 November 2024, Saturday</th>
+            </tr>
+            <tr class="content-row">
+              <td>9:00-9:45</td>
+              <td>Keynote Talk</td>
+              <td><i>Shi Jin</i></td>
+              <td>Allen-Cahn Message Passing in Graph Neural Networks and Fast Sinkhorn for Wasserstein-1 Metric</td>
+            </tr>
+            <tr class="content-row">
+              <td>9:45-10:15</td>
+              <td>Invited Talk</td>
+              <td><i>Ming Li</i></td>
+              <td>Heterophilous Hypergraph Learning</td>
+            </tr>
+            <tr class="content-row">
+              <td>10:15-10:45</td>
+              <td>Tea Break</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="content-row">
+              <td>10:45-11:30</td>
+              <td>Keynote Talk</td>
+              <td><i>Chuan Shi</i></td>
+              <td>Graph Machine Learning: From Graph Neural Network to Graph Foundation Model</td>
+            </tr>
+            <tr class="content-row">
+              <td>11:30-12:00</td>
+              <td>Invited Talk</td>
+              <td><i>Weiran Cai</i></td>
+              <td>Contrastive Learning for Homophilic and Heterophilic Graphs</td>
+            </tr>
+            <tr class="content-row">
+              <td>12:00-14:00</td>
+              <td>Lunch</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="content-row">
+              <td>14:00-14:45</td>
+              <td>Keynote Talk</td>
+              <td><i>Xiaosheng Zhuang</i></td>
+              <td>Permutation Equivariant Graph Framelets for Heterophilous Graph Learning</td>
+            </tr>
+            <tr class="content-row">
+              <td>14:45-15:15</td>
+              <td>Invited Talk</td>
+              <td><i>Xiao He</i></td>
+              <td>ChemGPT: An AI-Driven Molecular Synthesis Platform</td>
+            </tr>
+            <tr class="content-row">
+              <td>15:15-15:45</td>
+              <td>Tea Break</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="content-row">
+              <td>15:45-16:15</td>
+              <td>Invited Talk</td>
+              <td><i>Qingyun Sun</i></td>
+              <td>Towards Low-Distortion Graph Representation Learning</td>
+            </tr>
+            <tr class="content-row">
+              <td>16:15-16:45</td>
+              <td>Invited Talk</td>
+              <td><i>Jian Jiang</i></td>
+              <td>Virtual Screening in Drug Design based on Topology and AI</td>
+            </tr>
+            <tr class="content-row">
+              <td>16:45-20:00</td>
+              <td>Dinner</td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <!-- Day 3 -->
+            <tr class="day-header">
+              <th colspan="4">Day 3: 1 December 2024, Sunday</th>
+            </tr>
+            <tr class="content-row">
+              <td>9:00-9:45</td>
+              <td>Keynote Talk</td>
+              <td><i>Guowei Wei</i></td>
+              <td>Topological Deep Learning on Graphs, Manifolds, and Curves</td>
+            </tr>
+            <tr class="content-row">
+              <td>9:45-10:15</td>
+              <td>Invited Talk</td>
+              <td><i>Jiawei Jiang</i></td>
+              <td>自监督图数据集压缩</td>
+            </tr>
+            <tr class="content-row">
+              <td>10:15-10:45</td>
+              <td>Tea Break</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="content-row">
+              <td>10:45-11:15</td>
+              <td>Invited Talk</td>
+              <td><i>Yuanhong Jiang</i></td>
+              <td>图网络在推荐系统中的应用</td>
+            </tr>
+            <tr class="content-row">
+              <td>11:15-11:45</td>
+              <td>Invited Talk</td>
+              <td><i>Guibin Zhang</i></td>
+              <td>Graph4LLM: Reimagining Graph Machine Learning within LLM-based Agentic Systems</td>
+            </tr>
+            <tr class="content-row">
+              <td>11:45-12:15</td>
+              <td>Invited Talk</td>
+              <td><i>Bohang Zhang</i></td>
+              <td>图同态：研究图神经网络表达能力的定量框架</td>
+            </tr>
+            <tr class="content-row">
+              <td>12:15-14:00</td>
+              <td>Lunch</td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-    <style>
-      .content-row {
-        background-color: #f9f9f9;
-      }
-      .day-header {
-        background-color: #e6f7ff;
-        font-weight: bold;
-      }
-      .dataframe thead tr {
-        background-color: #f2f2f2;
-      }
-      table.dataframe {
-        width: 100%;
-        border-collapse: collapse;
-      }
-      table.dataframe th, table.dataframe td {
-        border: 1px solid #ddd;
-        padding: 8px;
-        text-align: center;
-      }
-      table.dataframe th h4 {
-        margin: 0;
-      }
-      table.dataframe th:nth-child(1),
-      table.dataframe td:nth-child(1) { width: 15%; }
-      table.dataframe th:nth-child(2),
-      table.dataframe td:nth-child(2) { width: 25%; }
-      table.dataframe th:nth-child(3),
-      table.dataframe td:nth-child(3) { width: 20%; }
-      table.dataframe th:nth-child(4),
-      table.dataframe td:nth-child(4) { width: 40%; }
-    </style>
-
-    <table class="dataframe">
-      <thead>
-        <tr>
-          <th colspan="4"><h4>Time Table</h4></th>
-        </tr>
-        <tr>
-          <th>Time</th>
-          <th>Session</th>
-          <th>Speaker</th>
-          <th>Talk Title</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- Day 1 -->
-        <tr class="day-header">
-          <th colspan="4">Day 1: 29 November 2024, Friday</th>
-        </tr>
-        <tr class="content-row">
-          <td>9:00-9:10</td>
-          <td>Opening Remarks</td>
-          <td>Smita Krishnaswamy</td>
-          <td></td>
-        </tr>
-        <tr class="content-row">
-          <td>9:10-9:15</td>
-          <td></td>
-          <td>Kaizhu Huang</td>
-          <td></td>
-        </tr>
-        <tr class="content-row">
-          <td>9:15-10:00</td>
-          <td>Keynote Talk</td>
-          <td>Zhewei Wei</td>
-          <td>Graph Machine Learning: Foundations and Perspectives</td>
-        </tr>
-        <tr class="content-row">
-          <td>10:00-10:30</td>
-          <td>Tea Break</td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr class="content-row">
-          <td>10:30-11:00</td>
-          <td>Invited Talk</td>
-          <td>Xian Wei</td>
-          <td>Geometric Transformer Learning for Point Clouds</td>
-        </tr>
-        <tr class="content-row">
-          <td>11:00-11:30</td>
-          <td>Invited Talk</td>
-          <td>Eric Qu</td>
-          <td>The Importance of Being Scalable: Improving the Speed and Accuracy of Neural Network Interatomic Potentials</td>
-        </tr>
-        <tr class="content-row">
-          <td>11:30-12:00</td>
-          <td>Invited Talk</td>
-          <td>Kun Zhan</td>
-          <td>Bias Mitigation in Graph Generative Models</td>
-        </tr>
-        <tr class="content-row">
-          <td>12:00-14:00</td>
-          <td>Lunch</td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr class="content-row">
-          <td>14:00-14:45</td>
-          <td>Keynote Talk</td>
-          <td>Angelica Aviles-Rivero</td>
-          <td>Hypergraphs Networks: Hybrid Models with Minimal Supervision for Multi-Modal Classification</td>
-        </tr>
-        <tr class="content-row">
-          <td>14:45-15:15</td>
-          <td>Invited Talk</td>
-          <td>Chieh-Hsin Lai</td>
-          <td>Evolution of Diffusion Models: From Birth to Enhanced Efficiency and Controllability</td>
-        </tr>
-        <tr class="content-row">
-          <td>15:15-15:45</td>
-          <td>Tea Break</td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr class="content-row">
-          <td>15:45-16:15</td>
-          <td>Invited Talk</td>
-          <td>Cheng Cheng</td>
-          <td>Random Sampling and Distributed Reconstruction of Bandlimited Graph Signals from Local Measurements</td>
-        </tr>
-        <tr class="content-row">
-          <td>16:15-16:45</td>
-          <td>Invited Talk</td>
-          <td>Zhixun Li</td>
-          <td>Graph Intelligence with Large Language Models and Prompt Learning</td>
-        </tr>
-        <tr class="content-row">
-          <td>16:45-17:15</td>
-          <td>Invited Talk</td>
-          <td>Xiaoqing Liu</td>
-          <td>Data-Driven and AI-Enhanced Design of Material Interfaces: Discovery of Z-scheme Heterostructures</td>
-        </tr>
-        <tr class="content-row">
-          <td>17:15-20:00</td>
-          <td>Dinner</td>
-          <td></td>
-          <td></td>
-        </tr>
-
-        <!-- Day 2 -->
-        <tr class="day-header">
-          <th colspan="4">Day 2: 30 November 2024, Saturday</th>
-        </tr>
-        <tr class="content-row">
-          <td>9:00-9:45</td>
-          <td>Keynote Talk</td>
-          <td>Shi Jin</td>
-          <td>Allen-Cahn message passing in graph neural networks and fast Sinkhorn for Wasserstein-1 metric</td>
-        </tr>
-        <tr class="content-row">
-          <td>9:45-10:15</td>
-          <td>Invited Talk</td>
-          <td>Ming Li</td>
-          <td>Heterophilous Hypergraph Learning</td>
-        </tr>
-        <tr class="content-row">
-          <td>10:15-10:45</td>
-          <td>Tea Break</td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr class="content-row">
-          <td>10:45-11:30</td>
-          <td>Keynote Talk</td>
-          <td>Chuan Shi</td>
-          <td>Graph Machine Learning: from Graph Neural Network to Graph Foundation Model</td>
-        </tr>
-        <tr class="content-row">
-          <td>11:30-12:00</td>
-          <td>Invited Talk</td>
-          <td>Weiran Cai</td>
-          <td>Contrastive Learning for Homophilic and Heterophilic Graphs</td>
-        </tr>
-        <tr class="content-row">
-          <td>12:00-14:00</td>
-          <td>Lunch</td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr class="content-row">
-          <td>14:00-14:45</td>
-          <td>Keynote Talk</td>
-          <td>Xiaosheng Zhuang</td>
-          <td>Permutation Equivariant Graph Framelets for Heterophilous Graph Learning</td>
-        </tr>
-        <tr class="content-row">
-          <td>14:45-15:15</td>
-          <td>Invited Talk</td>
-          <td>Xiao He</td>
-          <td>ChemGPT: An AI-Driven Molecular Synthesis Platform</td>
-        </tr>
-        <tr class="content-row">
-          <td>15:15-15:45</td>
-          <td>Tea Break</td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr class="content-row">
-          <td>15:45-16:15</td>
-          <td>Invited Talk</td>
-          <td>Qingyun Sun</td>
-          <td>Towards Low-Distortion Graph Representation Learning</td>
-        </tr>
-        <tr class="content-row">
-          <td>16:15-16:45</td>
-          <td>Invited Talk</td>
-          <td>Jian Jiang</td>
-          <td>Virtual Screening in Drug Design based on Topology and AI</td>
-        </tr>
-        <tr class="content-row">
-          <td>16:45-20:00</td>
-          <td>Dinner</td>
-          <td></td>
-          <td></td>
-        </tr>
-
-        <!-- Day 3 -->
-        <tr class="day-header">
-          <th colspan="4">Day 3: 1 December 2024, Sunday</th>
-        </tr>
-        <tr class="content-row">
-          <td>9:00-9:45</td>
-          <td>Keynote Talk</td>
-          <td>Guowei Wei</td>
-          <td>Topological deep learning on graphs, manifolds, and curves</td>
-        </tr>
-        <tr class="content-row">
-          <td>9:45-10:15</td>
-          <td>Invited Talk</td>
-          <td>Jiawei Jiang</td>
-          <td>自监督图数据集压缩</td>
-        </tr>
-        <tr class="content-row">
-          <td>10:15-10:45</td>
-          <td>Tea Break</td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr class="content-row">
-          <td>10:45-11:15</td>
-          <td>Invited Talk</td>
-          <td>Yuanhong Jiang</td>
-          <td>图网络在推荐系统中的应用</td>
-        </tr>
-        <tr class="content-row">
-          <td>11:15-11:45</td>
-          <td>Invited Talk</td>
-          <td>Guibin Zhang</td>
-          <td>Graph4LLM: Reimagining graph machine learning within LLM-based agentic systems</td>
-        </tr>
-        <tr class="content-row">
-          <td>11:45-12:15</td>
-          <td>Invited Talk</td>
-          <td>Bohang Zhang</td>
-          <td>图同态：研究图神经网络表达能力的定量框架</td>
-        </tr>
-        <tr class="content-row">
-          <td>12:15-14:00</td>
-          <td>Lunch</td>
-          <td></td>
-          <td></td>
-        </tr>
-      </tbody>
-    </table>
   </div>
-</div>
-
+</body>
 
 
 
@@ -1094,7 +1142,6 @@ function showhide(id) {
 
   </div> <!-- End of container -->
 </div> <!-- End of organizers section -->
-
 
 <!-- Poster Section -->
 <div id="poster" class="content-section-a" style="border-top: 0; padding: 50px 0;">
